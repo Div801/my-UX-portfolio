@@ -3,11 +3,12 @@ import { motion } from 'framer-motion';
 import { Heart, Github, Linkedin, Instagram, Dribbble } from 'lucide-react';
 
 const Footer: React.FC = () => {
+  // ⬇️ Put your real links here
   const socialLinks = [
-    { icon: Dribbble, href: '#', color: 'hover:text-pink-500' },
-    { icon: Instagram, href: '#', color: 'hover:text-purple-500' },
-    { icon: Linkedin, href: '#', color: 'hover:text-blue-500' },
-    { icon: Github, href: '#', color: 'hover:text-gray-700' },
+    { icon: Dribbble,  href: '#',                                            color: 'hover:text-pink-500',   label: 'Dribbble' },
+    { icon: Instagram, href: 'https://www.instagram.com/YOUR_INSTAGRAM/',    color: 'hover:text-purple-500', label: 'Instagram' },
+    { icon: Linkedin,  href: 'https://www.linkedin.com/in/divyanjalee-abesekara-1b2498246/',   color: 'hover:text-blue-500',   label: 'LinkedIn' },
+    { icon: Github,    href: 'https://github.com/Div801',               color: 'hover:text-gray-700',   label: 'GitHub' },
   ];
 
   return (
@@ -25,6 +26,9 @@ const Footer: React.FC = () => {
               <motion.a
                 key={index}
                 href={link.href}
+                target={link.href.startsWith('http') ? '_blank' : undefined}
+                rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
+                aria-label={link.label}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
