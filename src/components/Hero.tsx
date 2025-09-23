@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
-          Aspiring UI/UX Designer  crafting beautiful experiences that bridge creativity and functionality
+          Aspiring UI/UX Engineer crafting beautiful experiences that bridge creativity and functionality
         </motion.p>
 
         {/* Buttons */}
