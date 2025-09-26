@@ -31,8 +31,8 @@ const Projects: React.FC = () => {
       color: 'from-pink-300 to-purple-300',
       tags: ['Heuristic Review', 'Wireframes', 'Usability Testing', 'UI'],
       links: [
-        { label: 'Case Study', href: 'https://your-site/case-studies/kapruka' },
-        { label: 'Figma', href: 'https://www.figma.com/file/your-kapruka' },
+        { label: 'Case Study', href: 'https://www.figma.com/board/A2l24Xnrwerk4FVCbVr5x3/KaprukaRedesign-UXResearch.?node-id=10-463&t=o9h71H7ht7jto5SR-1' },
+        { label: 'Figma', href: 'https://www.figma.com/design/OfH2ynj4YySkO0ZWIvBuGh/kapruka-Design-File?node-id=0-1&t=VNfjpTxmRhk9KJv7-1' },
       ],
 
       brand: {
@@ -53,7 +53,7 @@ const Projects: React.FC = () => {
       color: 'from-green-300 to-blue-300',
       tags: ['IA', 'Accessibility', 'Responsive UI'],
       links: [
-        { label: 'Case Study', href: 'https://your-site/case-studies/nenasala' },
+        { label: 'Case Study', href: 'https://www.notion.so/Nenasala-lk-UX-research-237dc64d10128026a5caff6994ea3131?source=copy_link' },
         { label: 'Figma', href: 'https://www.figma.com/file/your-nenasala' },
       ],
     },
