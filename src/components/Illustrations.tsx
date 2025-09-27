@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Code, Star, Github } from 'lucide-react';
+import { Sparkles, Star, Github } from 'lucide-react';
 
 type Project = {
   id: number;
@@ -173,7 +173,7 @@ const Projects: React.FC = () => {
           className="text-center mt-16"
         >
           <a
-            href="https://github.com/Dhanuka001"
+            href="https://github.com/Div801"
             target="_blank"
             rel="noopener noreferrer"
           >

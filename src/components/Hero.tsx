@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
         >
           {/* Download my CV */}
           <motion.a
-            href="/cv/Divyanjalee-Abesekara-CV.pdf" // place file at /public/cv/...
+            href="/cv/DivyanjaleeAbesekaraCV.pdf" // place file at /public/cv/...
             download
             aria-label="Download my CV"
             whileHover={{ scale: 1.05 }}
