@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Code, Star } from 'lucide-react';
+import { Sparkles, Code, Star, Github } from 'lucide-react';
 
 type Project = {
   id: number;
   title: string;
   description: string;
-  image: string;  // URL or data URL
+  image: string;  
   tech: string;
+  github: string;
 };
 
 // Minimal Cheems-y Shiba SVG (data URL, no hosting needed)
@@ -41,7 +42,6 @@ const CHEEMS_IMAGE = `data:image/svg+xml;utf8,` + encodeURIComponent(`
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
-    // 1) Pet Care App — FIRST (unchanged image)
     {
       id: 1,
       title: "Pet Care App – Vet Tele-Consult (Research)",
@@ -49,10 +49,9 @@ const Projects: React.FC = () => {
         "On-demand veterinary tele-consultation platform. Built the NLP chatbot for symptom triage and a vet booking flow with secure scheduling and case notes.",
       image:
         "https://images.pexels.com/photos/4587995/pexels-photo-4587995.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: "React, Flask, MongoDB, NLP (spaCy), JWT",
+      tech: "Flutter , Flask, MongoDB, NLP (spaCy), JWT",
+      github: "https://github.com/Dhanuka001/PawPal-frontend",
     },
-
-    // 2) Meme Maker — minimal Cheems SVG
     {
       id: 2,
       title: "Meme Maker App",
@@ -60,9 +59,8 @@ const Projects: React.FC = () => {
         "A small solo project to create, edit, and share memes with text, stickers, and filters.",
       image: CHEEMS_IMAGE,
       tech: "React, TailwindCSS, Node.js",
+      github: "https://github.com/Div801/Memes-Maker",
     },
-
-    // 3) Fitness App — Completed product (your part: Meal Planning)
     {
       id: 3,
       title: "Fitness App – Meal Planning (Completed)",
@@ -71,6 +69,7 @@ const Projects: React.FC = () => {
       image:
         "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1600",
       tech: "React, Node.js, MongoDB",
+      github: "https://github.com/Div801/pafMealPlan",
     },
   ];
 
@@ -135,13 +134,15 @@ const Projects: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileHover={{ opacity: 1, scale: 1 }}
+                {/* GitHub Icon Link */}
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2"
                 >
-                  <Code className="w-5 h-5 text-purple-500" />
-                </motion.div>
+                  <Github className="w-5 h-5 text-gray-800" />
+                </a>
               </div>
 
               <div className="p-6">
@@ -171,13 +172,19 @@ const Projects: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-gradient-to-r from-purple-400 to-pink-400 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-shadow duration-300"
+          <a
+            href="https://github.com/Dhanuka001"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            View More Projects
-          </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 bg-gradient-to-r from-purple-400 to-pink-400 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              View More Projects
+            </motion.button>
+          </a>
         </motion.div>
       </div>
     </section>

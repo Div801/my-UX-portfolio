@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
       tags: ['Heuristic Review', 'Wireframes', 'Usability Testing', 'UI'],
       links: [
         { label: 'Case Study', href: 'https://www.figma.com/board/A2l24Xnrwerk4FVCbVr5x3/KaprukaRedesign-UXResearch.?node-id=10-463&t=o9h71H7ht7jto5SR-1' },
-        { label: 'Figma', href: 'https://www.figma.com/design/OfH2ynj4YySkO0ZWIvBuGh/kapruka-Design-File?node-id=0-1&t=VNfjpTxmRhk9KJv7-1' },
+        { label: 'Figma', href: 'https://www.figma.com/design/OfH2ynj4YySkO0ZWIvBuGh/kapruka-Design-File?node-id=0-1&t=80V9JyXYGUOVoTLV-1' },
       ],
 
       brand: {
@@ -51,10 +51,10 @@ const Projects: React.FC = () => {
       image:
         'https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg?auto=compress&cs=tinysrgb&w=1600',
       color: 'from-green-300 to-blue-300',
-      tags: ['IA', 'Accessibility', 'Responsive UI'],
+      tags: [ 'Accessibility', 'Responsive UI'],
       links: [
         { label: 'Case Study', href: 'https://www.notion.so/Nenasala-lk-UX-research-237dc64d10128026a5caff6994ea3131?source=copy_link' },
-        { label: 'Figma', href: 'https://www.figma.com/file/your-nenasala' },
+        { label: 'Figma', href: 'https://www.figma.com/design/ZZuzLGRaB4BU9pR2tdS4eC/Nenasala.lk.Remake?node-id=87-300&t=nwARZS6XgIYXdgUp-1' },
       ],
     },
     {
@@ -67,7 +67,7 @@ const Projects: React.FC = () => {
       image:
         'https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1600',
       color: 'from-orange-300 to-pink-300',
-      tags: ['FinTech', 'Mobile', 'A11y'],
+      tags: ['FinTech', 'Mobile', ],
       links: [
         { label: 'Figma', href: 'https://www.figma.com/file/your-banking' },
         { label: 'Case Study', href: 'https://your-site/case-studies/banking' },
