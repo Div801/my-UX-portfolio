@@ -69,7 +69,7 @@ const Projects: React.FC = () => {
       color: 'from-purple-300 to-indigo-300',
       tags: [ 'Innovation', 'Mobile App'],
       links: [
-        { label: 'Figma', href: 'https://www.figma.com/proto/8nES5kGl12Yv6tW9rcwIUr/Dream-Journal-Dream-visualizer?page-id=0%3A1&node-id=24-65&p=f&viewport=46%2C194%2C0.45&t=nAP5ulVjq83snFHl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2' },
+        { label: 'Figma', href: 'https://www.figma.com/proto/8nES5kGl12Yv6tW9rcwIUr/Dream-Journal-Dream-visualizer?page-id=0%3A1&node-id=1-2&viewport=179%2C262%2C0.29&t=WulBxIrM5JouJnbp-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2' },
       ],
     },
     {
