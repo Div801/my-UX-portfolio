@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
 
       brand: {
         alt: 'Kapruka',
-         src: 'https://your-cdn.com/kapruka-logo-new.png',  
+        src: 'https://your-cdn.com/kapruka-logo-new.png',
         textFallback: 'Kapruka',
       },
     },
@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
       image:
         'https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg?auto=compress&cs=tinysrgb&w=1600',
       color: 'from-green-300 to-blue-300',
-      tags: [ 'Accessibility', 'Responsive UI'],
+      tags: ['Accessibility', 'Responsive UI'],
       links: [
         { label: 'Case Study', href: 'https://www.notion.so/Nenasala-lk-UX-research-237dc64d10128026a5caff6994ea3131?source=copy_link' },
         { label: 'Figma', href: 'https://www.figma.com/design/ZZuzLGRaB4BU9pR2tdS4eC/Nenasala.lk.Remake?node-id=87-300&t=nwARZS6XgIYXdgUp-1' },
@@ -59,6 +59,21 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
+      title: 'AI Dream Visualizer',
+      category: 'Experimental App',
+      description:
+        'An innovative self-initiated app that transforms imagination into dream-like visuals using AI models.',
+      // Pexels: dreamy abstract AI vibe
+      image:
+        'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      color: 'from-purple-300 to-indigo-300',
+      tags: [ 'Innovation', 'Mobile App'],
+      links: [
+        { label: 'Figma', href: 'https://www.figma.com/proto/8nES5kGl12Yv6tW9rcwIUr/Dream-Journal-Dream-visualizer?page-id=0%3A1&node-id=24-65&p=f&viewport=46%2C194%2C0.45&t=nAP5ulVjq83snFHl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2' },
+      ],
+    },
+    {
+      id: 4,
       title: 'Banking App Redesign (WIP)',
       category: 'UI/UX Design',
       description:
@@ -67,7 +82,7 @@ const Projects: React.FC = () => {
       image:
         'https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1600',
       color: 'from-orange-300 to-pink-300',
-      tags: ['FinTech', 'Mobile', ],
+      tags: ['FinTech', 'Mobile'],
       links: [
         { label: 'Figma', href: 'https://www.figma.com/file/your-banking' },
         { label: 'Case Study', href: 'https://your-site/case-studies/banking' },
@@ -85,7 +100,7 @@ const Projects: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}   /* <-- CLOSED HERE */
+          transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
           <h2 className="text-5xl font-thin text-gray-800 mb-6">UI/UX Projects</h2>
